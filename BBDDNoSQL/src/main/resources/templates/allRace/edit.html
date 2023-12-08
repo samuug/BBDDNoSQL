@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+    <head>
+        <title>[[#{allRace.edit.headline}]]</title>
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="flex flex-wrap mb-6">
+                <h1 class="grow text-3xl md:text-4xl font-medium mb-2">[[#{allRace.edit.headline}]]</h1>
+                <div>
+                    <a th:href="@{/allRaces}" class="inline-block text-white bg-gray-500 hover:bg-gray-600 focus:ring-gray-200 focus:ring-4 rounded px-5 py-2">[[#{allRace.edit.back}]]</a>
+                </div>
+            </div>
+            <div th:replace="~{fragments/forms::globalErrors('allRace')}" />
+            <form th:action="${requestUri}" method="post">
+                <input type="submit" th:value="#{allRace.edit.headline}" class="inline-block text-white bg-blue-600 hover:bg-blue-700 focus:ring-blue-300  focus:ring-4 rounded px-5 py-2 mt-6 mb-5" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='id', disabled=true)}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='date', inputClass='js-datepicker')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p1')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p2')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p3')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p4')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p5')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p6')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p7')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p8')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p9')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p10')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p11')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p12')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p13')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p14')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p15')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p16')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p17')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p18')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p19')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p20')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p21')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p22')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p23')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p24')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p25')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p26')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p27')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p28')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p29')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p30')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p31')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p32')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p33')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p34')}" />
+                <div th:replace="~{fragments/forms::inputRow(object='allRace', field='p35')}" />
+                <input type="submit" th:value="#{allRace.edit.headline}" class="inline-block text-white bg-blue-600 hover:bg-blue-700 focus:ring-blue-300  focus:ring-4 rounded px-5 py-2 mt-6" />
+            </form>
+        </div>
+    </body>
+</html>
